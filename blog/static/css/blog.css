@@ -1,0 +1,42 @@
+body {
+	padding-left: 15px;
+}
+
+div.page-header {
+	background-color: #F24475;
+	margin-top: 0;
+	padding: 20px 20px 20px 40px;
+}
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    color: #ffffff;
+    font-size: 36pt;
+    text-decoration: none;
+}
+
+h1 {
+	color:	#c1c1c1;
+/*	font-weight: bold; */
+	font-family: 'Lobster';
+}
+
+div.description {
+	background-color: #c1c1c1;
+	width: 90%;
+}
+
+div.posts {
+	background-color: #e3e3e3;
+	width: 90%; 
+    	border-top: 1px solid #c3c3c3;
+    	list-style-type: none;
+}
+
+
+a {
+	color:	#de0d48;
+}
+
+h1 a {
+	color:	#DE0D29;
+}
