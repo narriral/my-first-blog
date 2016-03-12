@@ -15,21 +15,18 @@
 		</div>
 		<br>	
 		<div class="posts">
-		<p><i>publicada: 12.03.2016, 12:14</i></p>
-			<h2><a	href="">Titulo do post</a></h2>
-			<p>Aenean eu leo quam.	Pellentesque ornare sem	lacinia	quam venenatis vestibulum. 
+		  <p><i>publicada: 12.03.2016, 12:14</i></p>
+		  <p><strong><a href="">Titulo do post</a></strong></p>
+		  <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. 
 		</div>
 		<br>
-		<div class="posts">
-                <p><i>publicada: 12.03.2016, 12:14</i></p>
-                        <h2><a  href="">Título do post</a></h2>
-                        <p>Aenean eu leo quam.  Pellentesque ornare sem lacinia quam venenatis vestibulum.
-                </div>
+		{% for post in posts %}
+		<div class="psots">
+		  <p><i>publicada: {{ post.published_date }}</i></p>
+		  <strong><p><a href="">{{ post.title }}</a></p></strong>
+		  <p>{{ post.text|linebreaks }}</p><br />
+		</div>
+		{% endfor %}
 		<br>
-		<div class="posts">
-                <p><i>publicada: 12.03.2016, 12:14</i></p>
-                        <h2><a  href="">Título do post</a></h2>
-                        <p>Aenean eu leo quam.  Pellentesque ornare sem lacinia quam venenatis vestibulum.                              </div>
-
 	</body>
 </html>
